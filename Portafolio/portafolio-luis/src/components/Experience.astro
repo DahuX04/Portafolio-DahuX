@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Octubre 2023 - Marzo 2024",
+    title: "Analista Programador",
+    company: "NAS Consulting SAC",
+    description:
+      "Realice migraciones de sistemas basados en Oracle Forms 6i a un formato mas actualizado, como lo es Oracle Forms 12c, ademas de realizar mantenimiento y desarrollo de nuevas funcionalidades en los sistemas ya existentes.",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
